@@ -24,7 +24,7 @@ RTKLIB-TerraPPK-parallel
 
 ### URL del Repositorio:
 ```
-https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
+https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
 ```
 
 ### Descripción:
@@ -76,7 +76,7 @@ cd C:\Users\mival\Desktop\PPKAPP\RTKLIB-2.5.0
 git init
 git add .
 git commit -m "Initial commit: TerraPPK - RTKLIB 2.5.0 with parallel processing"
-git remote add origin https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+git remote add origin https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
 git branch -M main
 git push -u origin main
 ```
@@ -143,7 +143,7 @@ See [BUILDING.md](BUILDING.md) for compilation instructions.
 
 - **Email:** pedrosotosanabria@gmail.com
 - **WhatsApp:** +51 966598552
-- **Issues:** https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/issues
+- **Issues:** https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/issues
 
 ---
 
@@ -230,7 +230,7 @@ He desarrollado un fork optimizado de RTKLIB 2.5.0 que implementa
 procesamiento multi-hilo en modo Kinematic Combined, logrando una 
 mejora de velocidad del ~50%.
 
-🔗 GitHub: https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
+🔗 GitHub: https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
 
 ✨ Características:
 • 50% más rápido en modo Combined

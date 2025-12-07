@@ -30,14 +30,14 @@ if [ -d .git ]; then
         echo ""
         read -p "¿Deseas actualizar el remote a RTKLIB-TerraPPK-parallel? (s/n): " response
         if [ "$response" = "s" ] || [ "$response" = "S" ]; then
-            git remote set-url origin https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+            git remote set-url origin https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
             echo "✅ Remote actualizado"
         fi
     else
         echo "⚠️  No hay remote configurado"
         echo ""
-        read -p "Ingresa tu usuario de GitHub (Enter para usar DanielSotoDs): " username
-        if [ -z "$username" ]; then username="DanielSotoDs"; fi
+        read -p "Ingresa tu usuario de GitHub (Enter para usar PedroSoto-Code): " username
+        if [ -z "$username" ]; then username="PedroSoto-Code"; fi
         git remote add origin https://github.com/$username/RTKLIB-TerraPPK-parallel.git
         echo "✅ Remote añadido: https://github.com/$username/RTKLIB-TerraPPK-parallel.git"
     fi
@@ -49,8 +49,8 @@ else
         git init
         echo "✅ Repositorio inicializado"
         echo ""
-        read -p "Ingresa tu usuario de GitHub (Enter para usar DanielSotoDs): " username
-        if [ -z "$username" ]; then username="DanielSotoDs"; fi
+        read -p "Ingresa tu usuario de GitHub (Enter para usar PedroSoto-Code): " username
+        if [ -z "$username" ]; then username="PedroSoto-Code"; fi
         git remote add origin https://github.com/$username/RTKLIB-TerraPPK-parallel.git
         echo "✅ Remote añadido: https://github.com/$username/RTKLIB-TerraPPK-parallel.git"
     fi

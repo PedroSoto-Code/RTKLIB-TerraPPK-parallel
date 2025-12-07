@@ -33,14 +33,14 @@ if (Test-Path ".git") {
         Write-Host ""
         $response = Read-Host "¿Deseas actualizar el remote a RTKLIB-TerraPPK-parallel? (s/n)"
         if ($response -eq "s" -or $response -eq "S") {
-            git remote set-url origin https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+            git remote set-url origin https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
             Write-Host "✅ Remote actualizado" -ForegroundColor Green
         }
     } else {
         Write-Host "⚠️  No hay remote configurado" -ForegroundColor Yellow
         Write-Host ""
-        $username = Read-Host "Ingresa tu usuario de GitHub (Enter para usar DanielSotoDs)"
-        if ([string]::IsNullOrWhiteSpace($username)) { $username = "DanielSotoDs" }
+        $username = Read-Host "Ingresa tu usuario de GitHub (Enter para usar PedroSoto-Code)"
+        if ([string]::IsNullOrWhiteSpace($username)) { $username = "PedroSoto-Code" }
         git remote add origin "https://github.com/$username/RTKLIB-TerraPPK-parallel.git"
         Write-Host "✅ Remote añadido: https://github.com/$username/RTKLIB-TerraPPK-parallel.git" -ForegroundColor Green
     }
@@ -52,8 +52,8 @@ if (Test-Path ".git") {
         git init
         Write-Host "✅ Repositorio inicializado" -ForegroundColor Green
         Write-Host ""
-        $username = Read-Host "Ingresa tu usuario de GitHub (Enter para usar DanielSotoDs)"
-        if ([string]::IsNullOrWhiteSpace($username)) { $username = "DanielSotoDs" }
+        $username = Read-Host "Ingresa tu usuario de GitHub (Enter para usar PedroSoto-Code)"
+        if ([string]::IsNullOrWhiteSpace($username)) { $username = "PedroSoto-Code" }
         git remote add origin "https://github.com/$username/RTKLIB-TerraPPK-parallel.git"
         Write-Host "✅ Remote añadido: https://github.com/$username/RTKLIB-TerraPPK-parallel.git" -ForegroundColor Green
     }

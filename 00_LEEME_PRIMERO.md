@@ -12,6 +12,8 @@
 
 Este es el **motor de procesamiento** que utiliza la aplicación **TerraPPK 1.0.0**. Es un fork optimizado de RTKLIB 2.5.0 con procesamiento paralelo implementado.
 
+**Nota:** TerraPPK integra su propio fork (**RTKLIB-TerraPPK-parallel**, este repositorio) como motor; no requiere binarios externos de RTKLIB.
+
 **Especialización:**
 - 🛸 **Drones/UAV PPK** - Procesamiento optimizado para fotogrametría aérea
 - 📡 **Receptores GNSS PPK** - Topografía de alta precisión
@@ -190,7 +192,7 @@ git commit -m "Initial commit: RTKLIB 2.5.0 with parallel processing
 "
 
 # Conectar con GitHub (reemplaza con tu URL)
-git remote add origin https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+git remote add origin https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
 
 # Push
 git branch -M main

@@ -99,7 +99,7 @@ brew install cmake
 
 ```bash
 # Fork the repository first, then clone your fork
-git clone https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+git clone https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
 cd RTKLIB-TerraPPK-parallel
 
 # Create development build

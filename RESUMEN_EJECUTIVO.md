@@ -207,7 +207,7 @@ cd RTKLIB-TerraPPK-parallel
 git init
 git add .
 git commit -m "Initial commit: TerraPPK - RTKLIB 2.5.0 with parallel processing"
-git remote add origin https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+git remote add origin https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
 git push -u origin main
 ```
 
@@ -315,7 +315,7 @@ git push -u origin main
 - Email: pedrosotosanabria@gmail.com
 - Teléfono: +51 966598552
 - Ubicación: Lima, Perú
-- GitHub: https://github.com/DanielSotoDs
+- GitHub: https://github.com/PedroSoto-Code
 
 **Basado en:**
 - RTKLIB 2.5.0 by rtklibexplorer

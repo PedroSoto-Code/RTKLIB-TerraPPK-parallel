@@ -5,20 +5,22 @@
 [![License](https://img.shields.io/badge/License-BSD--2--Clause-blue.svg)](license.txt)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
 [![RTKLIB](https://img.shields.io/badge/RTKLIB-2.5.0-green.svg)](https://github.com/rtklibexplorer/RTKLIB)
-[![TerraPPK](https://img.shields.io/badge/Project-TerraPPK-orange.svg)]()
+[![TerraPPK](https://img.shields.io/badge/Project-TerraPPK-orange.svg)](https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel)
 
-## 📖 Overview
+---
+
+## Overview
 
 A high-performance fork of RTKLIB 2.5.0 developed for **TerraPPK** featuring **parallel processing** for Post-Processing Kinematic (PPK) calculations. This modification provides significant speed improvements for Combined mode processing by executing Forward and Backward filters simultaneously.
 
-### 🚀 Processing Engine for TerraPPK 1.0.0
+### Processing Engine for TerraPPK 1.0.0
 
-This fork serves as the **core processing engine** for **TerraPPK 1.0.0** - a professional PPK processing application with graphical user interface developed in Python/PySide6.
+This fork serves as the **core processing engine** for **TerraPPK 1.0.0** - a professional PPK processing application with graphical user interface developed in Python/PySide6. TerraPPK ships with its own fork (**RTKLIB-TerraPPK-parallel**, this repository) and does not rely on upstream RTKLIB binaries.
 
 **TerraPPK 1.0.0** specializes in **Kinematic Combined** mode processing for:
-- 🛸 **UAV/Drone PPK** - Optimized for drone photogrammetry workflows
-- 📡 **GNSS PPK Receivers** - Professional-grade positioning for surveying and mapping
-- 🚁 **Aerial Surveys** - High-precision georeferencing for aerial imagery
+- **UAV/Drone PPK** - Optimized for drone photogrammetry workflows
+- **GNSS PPK Receivers** - Professional-grade positioning for surveying and mapping
+- **Aerial Surveys** - High-precision georeferencing for aerial imagery
 
 The GUI application uses this optimized RTKLIB fork to deliver:
 - **50% faster** PPK processing in Combined mode
@@ -32,20 +34,22 @@ The GUI application uses this optimized RTKLIB fork to deliver:
 
 ### Key Features
 
-✨ **~50% faster** Combined mode processing on multi-core systems  
-🔄 **Parallel Forward/Backward** filter execution  
-🎯 **100% compatible** with original RTKLIB data formats  
-✅ **Identical results** to sequential processing  
-🌐 **Cross-platform** support (Windows, Linux, macOS)  
-🔒 **Thread-safe** implementation  
+- **~50% faster** Combined mode processing on multi-core systems
+- **Parallel Forward/Backward** filter execution
+- **100% compatible** with original RTKLIB data formats
+- **Identical results** to sequential processing
+- **Cross-platform** support (Windows, Linux, macOS)
+- **Thread-safe** implementation  
 
-## 🚀 Quick Start
+---
+
+## Quick Start
 
 ### Installation
 
 ```bash
 # Clone repository
-git clone https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+git clone https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
 cd RTKLIB-TerraPPK-parallel
 
 # Build with CMake
@@ -64,17 +68,21 @@ sudo make install
 ./rnx2rtkp -p 1 -m combined -o output.pos rover.obs base.obs nav.nav
 ```
 
-## 📊 Performance Comparison
+---
+
+## Performance Comparison
 
 | Mode | Original | Parallel | Improvement |
 |------|----------|----------|-------------|
 | **Kinematic** | 100s | 100s | 0% (N/A) |
-| **Combined** | 200s | 105s | **47.5%** ⚡ |
+| **Combined** | 200s | 105s | **47.5%** |
 | **Static** | 150s | 150s | 0% (N/A) |
 
 *Results based on typical PPK dataset with 2000+ epochs*
 
-## 🔧 What's Modified?
+---
+
+## What's Modified?
 
 ### Main Changes
 
@@ -93,7 +101,7 @@ The core modification is in `src/postpos.c`:
 
 ### Files Changed
 
-- ✅ `src/postpos.c` - Main implementation (~100 lines modified)
+- `src/postpos.c` - Main implementation (~100 lines modified)
 
 ### Files Unchanged
 
@@ -101,15 +109,19 @@ The core modification is in `src/postpos.c`:
 - No changes to algorithms or mathematical operations
 - Full backward compatibility with original RTKLIB
 
-## 📚 Documentation
+---
+
+## Documentation
 
 - **[README_MODIFICATIONS.md](README_MODIFICATIONS.md)** - Detailed technical overview
 - **[CHANGELOG.md](CHANGELOG.md)** - Version history and changes
 - **[BUILDING.md](BUILDING.md)** - Complete compilation guide
-- **[IMPLEMENTACION_MULTIHILO.md](../IMPLEMENTACION_MULTIHILO.md)** - Implementation details (Spanish)
-- **[EXPLICACION_INDEPENDENCIA_FORWARD_BACKWARD.md](../EXPLICACION_INDEPENDENCIA_FORWARD_BACKWARD.md)** - Technical explanation (Spanish)
+- **[IMPLEMENTACION_MULTIHILO.md](docs/IMPLEMENTACION_MULTIHILO.md)** - Implementation details (Spanish)
+- **[EXPLICACION_INDEPENDENCIA_FORWARD_BACKWARD.md](docs/EXPLICACION_INDEPENDENCIA_FORWARD_BACKWARD.md)** - Technical explanation (Spanish)
 
-## 🎯 Use Cases
+---
+
+## Use Cases
 
 Perfect for:
 - **Production PPK processing** - Faster turnaround times
@@ -118,7 +130,9 @@ Perfect for:
 - **Real-time requirements** - Quick results needed
 - **Multi-core systems** - Leverage all CPU cores
 
-## 💡 How It Works
+---
+
+## How It Works
 
 ### Traditional Sequential Processing
 
@@ -160,17 +174,19 @@ Total: 205 seconds
 Total: 105 seconds
 ```
 
-## ⚙️ Technical Details
+---
+
+## Technical Details
 
 ### Why Parallelization is Safe
 
 In Combined mode (`SOLTYPE_COMBINED`):
-1. Forward filter processes from start → end
-2. Backward filter **independently** processes from end → start
+1. Forward filter processes from start to end
+2. Backward filter independently processes from end to start
 3. Each filter maintains its own Kalman state
 4. Results combine only at the final step
 
-**No data dependencies** = Safe parallelization ✅
+**No data dependencies = Safe parallelization**
 
 ### Threading Implementation
 
@@ -184,9 +200,11 @@ CreateThread() → WaitForMultipleObjects()
 pthread_create() → pthread_join()
 ```
 
-Automatic platform detection at compile time!
+Automatic platform detection at compile time.
 
-## 🏗️ Building
+---
+
+## Building
 
 ### Prerequisites
 
@@ -222,17 +240,19 @@ make
 
 See [BUILDING.md](BUILDING.md) for detailed instructions.
 
-## 🧪 Testing
+---
+
+## Testing
 
 ### Validation
 
 The parallel implementation has been extensively tested:
 
-✅ Binary-identical results to original RTKLIB  
-✅ Tested with GPS, GLONASS, Galileo, BeiDou  
-✅ Multiple receiver types (u-blox, Trimble, etc.)  
-✅ Various environmental conditions  
-✅ Edge cases and error conditions  
+- Binary-identical results to original RTKLIB
+- Tested with GPS, GLONASS, Galileo, BeiDou
+- Multiple receiver types (u-blox, Trimble, etc.)
+- Various environmental conditions
+- Edge cases and error conditions  
 
 ### Run Tests
 
@@ -247,7 +267,9 @@ The parallel implementation has been extensively tested:
 time ./rnx2rtkp -p 1 -m combined -o output.pos rover.obs base.obs nav.nav
 ```
 
-## 📦 Applications Included
+---
+
+## Applications Included
 
 - **rnx2rtkp** - Post-processing PPK/PPP (MAIN APPLICATION)
 - **rtkrcv** - Real-time positioning
@@ -255,14 +277,18 @@ time ./rnx2rtkp -p 1 -m combined -o output.pos rover.obs base.obs nav.nav
 - **convbin** - Binary converter
 - **pos2kml** - Position to KML converter
 
-## 🔗 Related Projects
+---
+
+## Related Projects
 
 - [RTKLIB Original](https://github.com/tomojitakasu/RTKLIB) - Original RTKLIB by T.TAKASU
 - [RTKLIB Explorer](https://github.com/rtklibexplorer/RTKLIB) - Base for this fork
 - [RTKLib.js](https://github.com/ublox/rtklib.js) - JavaScript port
 - [GoGPS](https://gogps-project.github.io/) - MATLAB/Octave alternative
 
-## 🤝 Contributing
+---
+
+## Contributing
 
 Contributions are welcome! Please:
 
@@ -272,7 +298,9 @@ Contributions are welcome! Please:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+---
+
+## License
 
 This project inherits the license from RTKLIB 2.5.0. See [license.txt](license.txt) for details.
 
@@ -285,46 +313,56 @@ This project inherits the license from RTKLIB 2.5.0. See [license.txt](license.t
 - Email: pedrosotosanabria@gmail.com
 - Licensed under same BSD 2-Clause License
 
-## 👥 Authors
+---
+
+## Authors
 
 **Parallel Processing Fork (TerraPPK):**
-- Pedro Daniel Soto Sanabria - *Parallel processing implementation*
+- Pedro Daniel Soto Sanabria - Parallel processing implementation
   - Email: pedrosotosanabria@gmail.com
   - Phone: +51 966598552
   - Location: Lima, Perú
 
 **Based on RTKLIB by:**
-- Tomoji Takasu - *Original RTKLIB*
-- rtklibexplorer - *2.5.0 optimization*
+- Tomoji Takasu - Original RTKLIB
+- rtklibexplorer - 2.5.0 optimization
 
-## 🙏 Acknowledgments
+---
+
+## Acknowledgments
 
 - T.TAKASU for the original RTKLIB
 - rtklibexplorer for the optimized 2.5.0 version
 - GNSS community for continuous support
 - All contributors and testers
 
-## 📞 Support
+---
 
-- **GitHub:** https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
-- **Issues:** [GitHub Issues](https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/discussions)
+## Support
+
+- **GitHub:** https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
+- **Issues:** [GitHub Issues](https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/discussions)
 - **Email:** pedrosotosanabria@gmail.com
 - **Phone:** +51 966598552
 - **Documentation:** See `doc/` folder
 - **Original RTKLIB:** http://www.rtklib.com/
 
-## 🗺️ Roadmap
+---
+
+## Roadmap
 
 Future enhancements under consideration:
 
-- [ ] Parallel processing for Static mode
-- [ ] GPU acceleration for matrix operations
-- [ ] Further optimization of observation indexing
-- [ ] Real-time parallel processing in rtkrcv
-- [ ] Extended multi-threading for other modules
+- Parallel processing for Static mode
+- GPU acceleration for matrix operations
+- Further optimization of observation indexing
+- Real-time parallel processing in rtkrcv
+- Extended multi-threading for other modules
 
-## 📈 Benchmarks
+---
+
+## Benchmarks
 
 System specifications and benchmark results:
 
@@ -337,18 +375,22 @@ System specifications and benchmark results:
 
 *Results with typical 2000-epoch PPK dataset in Combined mode*
 
-## ⚠️ Known Issues
+---
+
+## Known Issues
 
 None currently reported. The implementation is stable and production-ready.
 
-If you find any issues, please report them on the [Issues page](../../issues).
+If you find any issues, please report them on the [Issues page](https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/issues).
 
-## 📊 Project Status
+---
 
-- ✅ **Stable** - Ready for production use
-- ✅ **Tested** - Extensively validated
-- ✅ **Maintained** - Active development
-- ✅ **Documented** - Comprehensive documentation
+## Project Status
+
+- **Stable** - Ready for production use
+- **Tested** - Extensively validated
+- **Maintained** - Active development
+- **Documented** - Comprehensive documentation
 
 ---
 

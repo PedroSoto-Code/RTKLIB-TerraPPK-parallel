@@ -12,7 +12,7 @@
 
 ### 🚀 Motor de Procesamiento para TerraPPK 1.0.0
 
-Este fork funciona como el **motor de procesamiento** de la aplicación **TerraPPK 1.0.0** - una aplicación profesional con interfaz gráfica desarrollada en Python/PySide6.
+Este fork funciona como el **motor de procesamiento** de la aplicación **TerraPPK 1.0.0** - una aplicación profesional con interfaz gráfica desarrollada en Python/PySide6. TerraPPK usa su propio fork (**RTKLIB-TerraPPK-parallel**, este repositorio) y no depende de binarios externos de RTKLIB.
 
 **TerraPPK 1.0.0** se especializa en procesamiento en modo **Kinematic Combined** para:
 - 🛸 **PPK para Drones/UAV** - Optimizado para flujos de trabajo de fotogrametría con drones
@@ -103,7 +103,7 @@ La aplicación con GUI utiliza este fork optimizado de RTKLIB para ofrecer:
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+git clone https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
 cd RTKLIB-TerraPPK-parallel
 
 # Compilar
@@ -122,7 +122,7 @@ sudo make install
 brew install cmake
 
 # Clonar y compilar
-git clone https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+git clone https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
 cd RTKLIB-TerraPPK-parallel
 mkdir build && cd build
 cmake ..
@@ -223,7 +223,7 @@ Ver [license.txt](license.txt) para más detalles.
 ## 🌐 Enlaces y Recursos
 
 ### TerraPPK
-- **GitHub:** https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
+- **GitHub:** https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
 - **Email:** pedrosotosanabria@gmail.com
 - **WhatsApp:** +51 966598552
 
@@ -248,7 +248,7 @@ Ver [license.txt](license.txt) para más detalles.
 - 📍 **Ubicación:** Lima, Perú
 
 ### Para Issues y Bug Reports:
-- Usa el [Issue Tracker](https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/issues) de GitHub
+- Usa el [Issue Tracker](https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/issues) de GitHub
 - Incluye información detallada:
   - Sistema operativo
   - Versión del software
@@ -256,7 +256,7 @@ Ver [license.txt](license.txt) para más detalles.
   - Archivos de ejemplo (si es posible)
 
 ### Para Preguntas Generales:
-- Abre una [Discussion](https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/discussions) en GitHub
+- Abre una [Discussion](https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/discussions) en GitHub
 - Envía un email con "[TerraPPK]" en el asunto
 
 ## 🗺️ Roadmap

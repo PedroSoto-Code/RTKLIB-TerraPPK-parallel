@@ -191,7 +191,7 @@ None reported.
 
 ## 📞 Support
 
-Report issues at: https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/issues
+Report issues at: https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/issues
 ```
 
 ### Archivos del Release
@@ -221,7 +221,7 @@ Report issues at: https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/issue
 [![License](https://img.shields.io/badge/License-BSD--2--Clause-blue.svg)](license.txt)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
 [![RTKLIB](https://img.shields.io/badge/RTKLIB-2.5.0-green.svg)]()
-[![Stars](https://img.shields.io/github/stars/DanielSotoDs/RTKLIB-TerraPPK-parallel.svg)](https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel)
+[![Stars](https://img.shields.io/github/stars/PedroSoto-Code/RTKLIB-TerraPPK-parallel.svg)](https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel)
 ```
 
 ### Comunidad
@@ -270,7 +270,7 @@ git add .
 git commit -m "Initial commit: RTKLIB 2.5.0 with parallel processing"
 
 # 2. Conectar con GitHub
-git remote add origin https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+git remote add origin https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
 
 # 3. Crear branch principal
 git branch -M main
@@ -309,7 +309,7 @@ git push origin v2.5.0-parallel-1.0
 - **Email:** pedrosotosanabria@gmail.com
 - **Teléfono:** +51 966598552
 - **Ubicación:** Lima, Perú
-- **GitHub:** https://github.com/DanielSotoDs
+- **GitHub:** https://github.com/PedroSoto-Code
 
 ### Agradecimientos
 

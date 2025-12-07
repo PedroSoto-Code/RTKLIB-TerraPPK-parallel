@@ -3,7 +3,7 @@
 ## ✅ Configuración Completa
 
 **Repositorio GitHub:** `RTKLIB-TerraPPK-parallel`  
-**URL:** https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
+**URL:** https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
 
 ---
 
@@ -13,7 +13,7 @@
 **Aplicación:** TerraPPK 1.0.0 (Interfaz gráfica profesional)  
 **Especialización:** Kinematic Combined para Drones/UAV y Receptores GNSS PPK  
 **Desarrollador:** Pedro Daniel Soto Sanabria  
-**Usuario GitHub:** DanielSotoDs  
+**Usuario GitHub:** PedroSoto-Code  
 **Email:** pedrosotosanabria@gmail.com  
 **Teléfono:** +51 966598552  
 **Ubicación:** Lima, Perú  
@@ -64,14 +64,14 @@
 
 Todas las URLs ahora apuntan a:
 ```
-https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
+https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
 ```
 
 ### Enlaces Directos:
-- **Repositorio:** https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
-- **Issues:** https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/issues
-- **Discussions:** https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/discussions
-- **Releases:** https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/releases
+- **Repositorio:** https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
+- **Issues:** https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/issues
+- **Discussions:** https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/discussions
+- **Releases:** https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/releases
 
 ---
 
@@ -111,7 +111,7 @@ git commit -m "Initial commit: TerraPPK - RTKLIB 2.5.0 with parallel processing
 - 100% compatible with original RTKLIB
 - Developed by Pedro Daniel Soto Sanabria
 "
-git remote add origin https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git
+git remote add origin https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git
 git branch -M main
 git push -u origin main
 ```
@@ -127,7 +127,7 @@ git push origin v2.5.0-parallel-1.0
 ```
 
 Luego en GitHub:
-1. Ve a: https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel/releases/new
+1. Ve a: https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel/releases/new
 2. Selecciona tag: `v2.5.0-parallel-1.0`
 3. **Title:** `TerraPPK v1.0 - RTKLIB 2.5.0 with Parallel Processing`
 4. **Description:** (ver `CONFIGURACION_GITHUB.md`)
@@ -175,7 +175,7 @@ Luego en GitHub:
    He desarrollado un fork optimizado de RTKLIB 2.5.0 que reduce 
    el tiempo de procesamiento PPK en ~50% mediante multi-threading.
    
-   🔗 https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
+   🔗 https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
    
    #GNSS #PPK #RTKLIB #TerraPPK #Geomática #Peru
    ```
@@ -186,7 +186,7 @@ Luego en GitHub:
    ⚡ 50% faster PPK
    🌐 Open Source
    
-   https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
+   https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
    
    #GNSS #PPK #OpenSource
    ```
@@ -246,13 +246,13 @@ O sigue los pasos manuales arriba.
 ## 📞 Tu Información
 
 **Pedro Daniel Soto Sanabria**
-- 🌐 GitHub: https://github.com/DanielSotoDs
+- 🌐 GitHub: https://github.com/PedroSoto-Code
 - 📧 Email: pedrosotosanabria@gmail.com
 - 📱 WhatsApp: +51 966598552
 - 📍 Lima, Perú
 - 💼 Proyecto: TerraPPK
 
-**Repositorio:** https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel
+**Repositorio:** https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel
 
 ---
 

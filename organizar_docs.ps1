@@ -130,7 +130,7 @@ if ($missing.Count -eq 0) {
     Write-Host "1. git init" -ForegroundColor White
     Write-Host "2. git add ." -ForegroundColor White
     Write-Host "3. git commit -m 'Initial commit: RTKLIB 2.5.0 with parallel processing'" -ForegroundColor White
-    Write-Host "4. git remote add origin https://github.com/DanielSotoDs/RTKLIB-TerraPPK-parallel.git" -ForegroundColor White
+    Write-Host "4. git remote add origin https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel.git" -ForegroundColor White
     Write-Host "5. git push -u origin main" -ForegroundColor White
 } else {
     Write-Host "⚠️  Faltan algunos archivos:" -ForegroundColor Yellow

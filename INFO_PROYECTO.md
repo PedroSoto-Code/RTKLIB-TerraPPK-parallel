@@ -15,7 +15,7 @@
 **Ciudad:** Lima  
 **Teléfono:** +51 966598552  
 **Email:** pedrosotosanabria@gmail.com  
-**GitHub:** https://github.com/DanielSotoDs  
+**GitHub:** https://github.com/PedroSoto-Code  
 
 ---
 
@@ -26,6 +26,8 @@
 ### 🎯 Motor de Procesamiento para TerraPPK 1.0.0
 
 Este fork funciona como el **motor de procesamiento principal** de la aplicación **TerraPPK 1.0.0** - un software profesional con interfaz gráfica desarrollada en Python/PySide6.
+
+**Nota:** TerraPPK incluye su propio fork (**RTKLIB-TerraPPK-parallel**, este repositorio) como motor de cálculo y no depende de binarios externos de RTKLIB.
 
 **Relación entre componentes:**
 - **RTKLIB-TerraPPK-parallel** → Motor de procesamiento PPK optimizado (este repositorio)
