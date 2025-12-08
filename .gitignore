@@ -35,6 +35,10 @@ build/
 
 # Ignore compilation results
 
+# Generated executables/binaries
+bin/
+*.exe
+
 util/gencrc/gencrc
 util/gencrc/genmsk
 util/gencrc/genxor

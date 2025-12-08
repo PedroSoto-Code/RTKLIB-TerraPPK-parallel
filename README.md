@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-BSD--2--Clause-blue.svg)](license.txt)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
-[![RTKLIB](https://img.shields.io/badge/RTKLIB-2.5.0-green.svg)](https://github.com/rtklibexplorer/RTKLIB)
+[![RTKLIB](https://img.shields.io/badge/RTKLIB-2.5.0-green.svg)](https://github.com/rtklibexplorer/RTKLIB/releases/tag/v2.5.0)
 [![TerraPPK](https://img.shields.io/badge/Project-TerraPPK-orange.svg)](https://github.com/PedroSoto-Code/RTKLIB-TerraPPK-parallel)
 
 ---
@@ -282,7 +282,7 @@ time ./rnx2rtkp -p 1 -m combined -o output.pos rover.obs base.obs nav.nav
 ## Related Projects
 
 - [RTKLIB Original](https://github.com/tomojitakasu/RTKLIB) - Original RTKLIB by T.TAKASU
-- [RTKLIB Explorer](https://github.com/rtklibexplorer/RTKLIB) - Base for this fork
+- [RTKLIB Explorer](https://github.com/rtklibexplorer/RTKLIB/releases/tag/v2.5.0) - Base for this fork (v2.5.0)
 - [RTKLib.js](https://github.com/ublox/rtklib.js) - JavaScript port
 - [GoGPS](https://gogps-project.github.io/) - MATLAB/Octave alternative
 

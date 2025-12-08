@@ -231,7 +231,7 @@ Ver [license.txt](license.txt) para más detalles.
 - **Website:** http://www.rtklib.com/
 - **Manual:** http://www.rtklib.com/prog/manual_2.4.2.pdf
 - **GitHub Original:** https://github.com/tomojitakasu/RTKLIB
-- **GitHub rtklibexplorer:** https://github.com/rtklibexplorer/RTKLIB
+- **GitHub rtklibexplorer:** https://github.com/rtklibexplorer/RTKLIB/releases/tag/v2.5.0
 
 ## 🙏 Agradecimientos
 

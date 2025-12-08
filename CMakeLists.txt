@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.16)
 # read and set rtklib version
 file(READ "src/rtklib.h" ver)
 
-string(REGEX MATCH "VER_RTKLIB[ ]+\"([a-zA-Z0-9]*)\"" _ ${ver})
+string(REGEX MATCH "VER_RTKLIB[ ]+\"([a-zA-Z0-9_-]+)\"" _ ${ver})
 set(VERSION ${CMAKE_MATCH_1})
-string(REGEX MATCH "PATCH_LEVEL[ ]+\"([a-zA-Z0-9]*)\"" _ ${ver})
+string(REGEX MATCH "PATCH_LEVEL[ ]+\"([a-zA-Z0-9_-]+)\"" _ ${ver})
 set(PATCH_LEVEL ${CMAKE_MATCH_1})
 
 message("RTKLIB version: ${VERSION}-${PATCH_LEVEL}")
